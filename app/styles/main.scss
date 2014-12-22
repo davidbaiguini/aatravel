@@ -19,19 +19,23 @@ body {
 .jumbotron {
     background-color: #e5e5e5;
     text-align: left !important;
+    padding-top: 20px;
 }
-
-.jumbotron > span {
+.jumbotron span {
     font-size: 20px;
     padding-left: 38px;
 }
-
-.jumbotron > .row {
-border-top: 1px solid #999;
+.jumbotron .block {
+    border-top: 1px solid #999;
     margin-top: 10px;
     padding-top: 10px;
 }
-
+.big-block {
+    margin-top: 30px;
+}
+.text {
+    padding: 40px;
+}
 .header,
 .marketing,
 .footer {
@@ -143,6 +147,9 @@ border-top: 1px solid #999;
     margin: 0;
     padding: 0;
 }
+.sidebar-nav span {
+    padding-top: 20px;
+}
 #page-content-wrapper {
     padding-left: 0;
     margin-left: 0;
@@ -182,16 +189,13 @@ border-top: 1px solid #999;
     opacity: .7;
 }
 .sidebar-nav li {
-    line-height: 40px;
+    line-height: 50px;
     text-indent: 20px;
 }
 .sidebar-nav li a {
     color: #333;
     display: block;
     text-decoration: none;
-}
-.sidebar-nav li a span {
-    color: #ffd400;
 }
 .navbar-nav > li > a {
     line-height: 32px;
@@ -218,7 +222,7 @@ border-top: 1px solid #999;
 }
 #main_icon {
     float: right;
-    padding: 20px;
+    padding: 20px 20px 20px 16px;
 }
 .sub_icon {
     float: right;
