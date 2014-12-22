@@ -1,12 +1,10 @@
 $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
 @import "config";
 @import "footer";
 
-
-
-// endbower
  .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -22,14 +20,12 @@ body {
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
 .vertical-align {
-    min-height: 100%;
-    /* Fallback for browsers do NOT support vh unit */
-    //min-height: 100vh;
-    /* These two lines are counted as one  :-)       */
-    display: flex;
-    align-items: center;
     border-bottom: 1px solid #EEE;
 }
+.valign{
+    padding-top: 20px;
+}
+
 .jumbotron {
     background-color: #e5e5e5;
     text-align: left !important;
