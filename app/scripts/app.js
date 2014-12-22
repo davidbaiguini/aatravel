@@ -1,7 +1,7 @@
 'use strict';
-$("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
+$("#menu-toggle").click(function (e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("active");
 });
 /**
  * @ngdoc overview
@@ -12,25 +12,35 @@ $("#menu-toggle").click(function(e) {
  * Main module of the application.
  */
 angular
-  .module('aatravelApp', [
+    .module('aatravelApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+    .config(function ($routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'views/main.html',
+                controller: 'MainCtrl'
+            })
+            .when('/about', {
+                templateUrl: 'views/about.html',
+                controller: 'AboutCtrl'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
+    });
+
+angular.module('aatravelApp').controller('CarouselDemoCtrl', function ($scope) {
+    $scope.myInterval = 100;
+    var slides = $scope.slides = [
+        { image: 'images/nz3.jpg', text: "New Zealand"  },
+        { image: 'images/nz2.jpg', text: "New Zealand" },
+        { image: 'images/nz4.jpg', text: "New Zealand" }
+  ];
+});

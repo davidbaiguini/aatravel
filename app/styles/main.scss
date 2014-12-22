@@ -16,6 +16,22 @@ body {
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
+.jumbotron {
+    background-color: #e5e5e5;
+    text-align: left !important;
+}
+
+.jumbotron > span {
+    font-size: 20px;
+    padding-left: 38px;
+}
+
+.jumbotron > .row {
+border-top: 1px solid #999;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
 .header,
 .marketing,
 .footer {
@@ -157,8 +173,8 @@ body {
     -ms-transition: background .5s;
     transition: background .5s;
 }
-.sidebar-nav li a span {
-    color: #ffd400;
+.sidebar-nav > li > a > div {
+    background-color: #ffd400;
 }
 .sidebar_name {
     padding-top: 25px;
@@ -202,13 +218,11 @@ body {
 }
 #main_icon {
     float: right;
-    padding-right: 25px;
-    padding-top: 20px;
+    padding: 20px;
 }
 .sub_icon {
     float: right;
-    padding-right: 25px;
-    padding-top: 10px;
+    padding: 20px;
 }
 .content-header {
     height: 65px;
@@ -220,7 +234,7 @@ body {
     line-height: 65px;
     display: inline-block;
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     #wrapper {
         padding-left: 70px;
         transition: all .4s ease 0s;
