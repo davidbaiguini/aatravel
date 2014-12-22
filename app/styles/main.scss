@@ -16,6 +16,15 @@ body {
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
+.vertical-align {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    //min-height: 100vh;
+    /* These two lines are counted as one  :-)       */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EEE;
+}
 .jumbotron {
     background-color: #e5e5e5;
     text-align: left !important;
@@ -55,6 +64,10 @@ body {
         //padding-bottom: 19px;
 
     }
+}
+.title{
+    padding-bottom: 20px;
+    color: #2E98DE;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
