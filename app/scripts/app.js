@@ -19,7 +19,8 @@ angular.module('aatravelApp', [
     'ngSanitize',
     'ngTouch',
     'ui.bootstrap',
-    'footer'
+    'footer',
+    'header'
   ]);
 
 angular.module('aatravelApp').config(function ($routeProvider) {
