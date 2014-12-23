@@ -20,7 +20,8 @@ angular.module('aatravelApp', [
     'ngTouch',
     'ui.bootstrap',
     'footer',
-    'header'
+    'header',
+    'sidebar'
   ]);
 
 angular.module('aatravelApp').config(function ($routeProvider) {
